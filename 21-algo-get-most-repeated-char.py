@@ -16,12 +16,12 @@ frequency = sorted(count_dic.items(), key=lambda x: x[1], reverse=True)
 print(frequency[0])
 
 
-## using .get( with default value)
+# using .get( with default value)
 def get_most_repeated_char(str):
     count = {}
     for char in str:
         count[char] = count.get(char, 0) + 1
-
     return sorted(count.items(), key=lambda x: x[1], reverse=True)[0]
+
 
 print('.get', get_most_repeated_char(sentence))
